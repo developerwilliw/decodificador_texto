@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Encode</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="challenge1.css">
+	</head>
+	<body>
+		<header>
+			<h1><img src="one.png"></h1>
+			<h2 class="titulo-cabecalho">Criptografe seu texto</h2>
+		</header>
+		<main>
+			<section id="entrada">
+				<label class="rotulo-entrada"> Apenas letras minúsculas, sem ascento</label> 
+				<textarea class="insira-texto"></textarea>
+				<div class="botoes-entrada">
+					<button class="criptografar"> Criptografar</button> 
+					<button class="descriptografar"> Descriptografar</button>
+				</div>
+			</section>
+			<section id="saida">
+				<label class="rotulo-saida">Mensagem Criptografada</label>
+				<textarea class="mostra-saida"></textarea>
+				<button class="copiar">Copiar</button>
+				<button class="limpar-campos">Limpar</button>
+			</section>
+		</main>
+		<footer> 
+			<p class="credito">Delevop by Willian Paulino</p>
+			<a class="github" href="https://github.com/developerwilliw"> github | @developerwilliw</a>
+			<img class="icone-github" src="github (1).png">
+			<a class="ref-icone" href="https://www.flaticon.com/br/icones-gratis/github" title="github ícones">Crédito: Github ícones criados por Hight Quality Icons - Flaticon</a>
+		</footer>
+	<script src="challenge1.js"></script>
+	</body>
+</html>
+
+
+<!-- descobertas importantes para o projeto: 
+	1 - Para linkar sua pag html com um arquivo CSS utilize: <link rel="stylesheet" type="text/css" href="challenge1.css" media="screen" />. Em href, coloque o nome do arquivo CSS que será linkado, no nosso caso: challenge1.css. Se o arquivo CSS estiver no mesmo diretório do arquivo HTML, basta colocar o nome do arquivo CSS. Caso o CSS esteja em um subdiretório é preciso identificá-lo antes do nome. Ex: href="subdiretorio/challenge1.css"
+
+	2 - Para dar apelidos às tags html, utilize o atributo class. Ex: <input class = "cripto">. Para se referenciar à tag utilizando o apelido digite "." antes do nome. Por exemplo: var cripto = document.querySelector(".cripto"); Isso é fundamental para colocar diversos botões e configurálos de maneiras diferentes, entre outras coisas. Vai ser importante para o nosso projeto uma vez que temos dois espaços de textos (uma entreda e outra saída) e 3 botões (criptografar, descriptografar e copiar). É possível referenciar a uma tag html atribuindo a ela um id. Exemplo: <input id="cripto">. Nesse caso, para referenciar a tag input com esse id, devo usar #cripto. Qual é a diferença de classe para id? id é único, enquanto classe posso atribuir um mesmo nome para mais de uma tag. 
+
+	3 - Ainda falta saber como trabalhar com arrays no JS. Consigo capturar uma letra por vez da string, porém não consigo modificar o elemento da posição i. É preciso ver mais tutoriais sobre JS. 
+
+	appendChild("nome da tag"); -> coloca informação dentro de uma tag html. Exemplo: section.appendChild(p) -> insere em uma seção um parágrafo p. 
+
+	Onde paramos: descobrir como modificar o texto digitado pelo usuário.
+	O que aprendemos sobre: temos o 
+	document.querySelector("classe/id/tag") que pega o somente o primeiro elemento contendo o valor especificado no arquivo html
+	document.querySelectorAll("classe"): faz uma pesquisa mais genérica com base na classe especificada e retorna todos
+	os elementos html que contém essa classe. 
+	document.getElementsByClassName("class_name"): em tese faz a mesma coisa que o document.querySelectorAll, não sei a diferença
+	document.getElementsById("Id") pega todos os elementos com um mesmo Id. 
+	Releia o artigo da alura sobre captura de inputs, o caminho está lá, bota fé
+
+	FOCA PRIMEIRO EM TERMINAR O 3 CURSOS DA FORMAÇÃO RESTANTES, ELES VÃO TE DAR A COMPETENCIA NECESSÁRIA PARA O CHALLENGE-->
